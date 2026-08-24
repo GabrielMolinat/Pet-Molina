@@ -1,54 +1,53 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 'Roboto';
+}
 
-margin:10;
-padding:10;
-box-sizing: border-box;
-font-family: "Montserrat", sans-serif;
-
+body {
+    font-family: Roboto, sans-serif;
+    background: #eeecec;
+    color: #333333;
 }
 
 li{
-display:inline-block;
+    display:inline-block;
 }
-
 nav{
-display:inline-block;
-
+    display:inline-block;
 }
 header{
-margin:30px 0px 144px 70px
+margin: 30px 0px 144px 70px;
 }
-
 a{
-font-weight: 600;
-font-size: 24px;
-line-height: 28px;
-margin: 0 20px 0 0 ;
-cursor: pointer;
-color: #2b2a47;
-transition: opacity 0.2s;
-text-decoration: none
-}
 
-a:hover{
-opacity: 0.8;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    color: #333333;
+    transition: opacity 0,2s;
+    text-decoration: none;
 }
+a:hover{
+opacity: 0.8;}
 
 .botao-login{
-width:130px;
-height:38px ;
-border-radius: 20px;
-background: #006fa2;
-border:none;
-font-size: 20px;
-font-weight: 600;
-color: rgb(227, 231, 235);
-transition: opacity 0.2s;
-}
 
-.botao-login.botao-login:hover{
-opacity: 0.8;
-color:black;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #7186e4;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 220, 220);
+    transition: opacity 0,2s;
+}
+.botao-login:hover{
+    opacity: 0.8;
+    background-color: rgb(122, 153, 238);
 }
 
 .logo{
@@ -60,20 +59,25 @@ color:black;
     width: 40%;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 5px;
     text-align: left;
 }
 
 .main{
     text-align: center;
+
 }
 
 .botao-explore{
     width: 190px;
-    height: 64px;
+    height: 34px;
+    cursor: pointer;
+    background-color: #5ae67d;
+    border: none;
+    border-radius: 20px;
     font-size: 20px;
     font-weight: 500;
-    box-shadow: 0 4px 5px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
     transition: opacity 0.3s;
 }
 
