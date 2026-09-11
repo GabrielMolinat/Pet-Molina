@@ -17,7 +17,7 @@ nav{
     display:inline-block;
 }
 header{
-margin: 30px 0px 144px 70px;
+margin: 30px 0px 60px 70px;
 }
 a{
 
@@ -51,19 +51,18 @@ opacity: 0.8;}
 }
 
 .logo{
-    width: 40%;
-    vertical-align: middle;
+    width: 40%; 
+    display: block;
+    margin: 0 auto 50px auto;
 }
 
 .texto{
-    width: 40%;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 0 0 5px;
-    text-align: left;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 0 auto;
 }
 
-.main{
+main{
     text-align: center;
 
 }
