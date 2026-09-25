@@ -1,105 +1,210 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: 'Roboto';
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    background: #eeecec;
-    color: #333333;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 li{
-    display:inline-block;
+    display: inline-block;
 }
-nav{
-    display:inline-block;
-}
-header{
-margin: 30px 0px 60px 70px;
-}
-a{
 
-    font-weight: 600;
+nav{
+    display: inline-block;
+}
+
+header{
+    margin: 30px 0px 144px 70px;
+}
+
+a{
+    font-weight: 500;
     font-size: 30px;
     line-height: 30px;
-    margin: 0 10px 0 0;
+    margin: 25px;
     cursor: pointer;
-    color: #333333;
-    transition: opacity 0,2s;
+    color: #1F2833;
+    transition:opacity 0.2;
     text-decoration: none;
 }
+
 a:hover{
-opacity: 0.8;}
+    opacity: 0.8;
+}
 
-.botao-login{
-
-    width: 130px;
+.botaoL{
+    width: 160px;
     height: 40px;
-    border-radius: 20px;
-    background-color: #7186e4;
+    border-radius: 30px;
+    background: #2a6e70;
     border: none;
     font-size: 20px;
-    font-weight: 700;
-    color: rgb(226, 220, 220);
-    transition: opacity 0,2s;
+    font-weight: 600;
+    color: #E6EBFF;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    transition:opacity 0.2s;
 }
-.botao-login:hover{
+
+.botaoL:hover{
     opacity: 0.8;
-    background-color: rgb(122, 153, 238);
+
 }
 
 .logo{
-    width: 40%; 
-    display: block;
-    margin: 0 auto 50px auto;
+    width: 40%;
+    max-width: 430px;
+    
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 5% ;
+
+
+
 }
 
 .texto{
-    width: 80%;
-    text-align: center;
-    margin: 0 auto 0 auto;
+
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 5%;
+    text-align: left;
 }
 
 main{
     text-align: center;
-
 }
 
-.botao-explore{
-    width: 190px;
-    height: 34px;
+.botaoE{
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
     cursor: pointer;
-    background-color: #5ae67d;
+    background: #42b7c7;
     border: none;
-    border-radius: 20px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #E6EBFF;
     box-shadow: 0 4px 5px rgba(0,0,0,0.2);
     transition: opacity 0.3s;
 }
 
-.botao-explore:hover{
-    opacity: 0.7;
+.botaoE:hover{
+    opacity: 0.8;
 }
 
 .titulo{
-    font-size: 30px;
-    font-weight: 900;
-    color: darkslategray;
+    font-size: 50px;
+    font-weight: 800;
+    color: #515151;
 }
 
 .sub-titulo{
-    color: darkslategray;
-    line-height: 1.5;
-    font-size: 25px;
+    font-size: 30px;
+    color: #515151;
+    line-height: 60px;
+
 }
 
 .paragrafo{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 350;
+    line-height: 20px;
+    color: #848484;
     text-align: justify;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 30px 0;
     max-width: 500px;
+}
+
+footer{
+    text-align: center;
+    background: #E6EBFF;
+    padding: 60px;
+    font-size: 14px;
+    margin-top: 100px;
+}
+.img-dog{
+    display: block;
+    width: 70%;
+    height: 650px;
+    object-fit: cover;
+    margin: 80px auto 0 auto;
+    border-radius: 15px; 
+}
+.servicos{
+    padding: 10px 0 100px;
+}
+
+.h2-servicos{
+    font-weight: 500px;
+}
+.preco{
+
+}
+
+.lista-servicos{
+    width: 200px;
+    display: block;
+    text-decoration: none;
+    color: #462c20;
+    border:2px solid;
+    margin: 0 20px;
+    padding: 20px 0;
+    border-radius: 15px;
+    transition: box-shadow 0.2s, transform 0.2 ;
+ }
+ .lista-servicos:hover{
+    box-shadow: 0 2px 5px rgba(0,0,10 0.2);
+    transform: translateY(-2px);
+ }
+
+.img-card{
+    width: 70%;
+}
+
+@media (max-width:768px){
+    header{
+        margin: 30px 0px 60px 0;
+    text-align: center;
+    width: 100%;
+    
+    }
+
+    a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0 20px 0 0 ;
+    }
+
+    .botaoL{
+        width: 90px;
+        height: 32px;
+        border-radius: 15px;
+     
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+     
+      
+    }
+
+    .logo{
+        width: 40%;
+        display: block;
+        margin: 0 auto 50px auto;
+    }
+    
+    .texto{
+        width: 80%;
+      text-align: center;
+    }
+
+    .titulo{
+        font-size: 30px;
+       
+    }
+.img-dog{
+   max-height: 250px;
+}
 }
