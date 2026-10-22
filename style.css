@@ -1,38 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-li{
+li {
     display: inline-block;
 }
 
-nav{
+nav {
     display: inline-block;
 }
 
-header{
-    margin: 30px 0px 144px 70px;
+header {
+    margin: 20px 0px 30px 0px;
+    background-color: #5ac1cfc8;
+    padding: 30px 0 20px 0;
+    border-bottom: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
-a{
+.link-menu {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    cursor: pointer;
+    margin: 0 23px 0 0;
+    color: #1F2833;
+    transition: opacity 0.3;
+    text-decoration: none;
+}
+
+.nome {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.n1 {
+    color: purple;
+}
+
+.n2 {
+    color: violet;
+}
+
+
+a {
     font-weight: 500;
     font-size: 30px;
     line-height: 30px;
     margin: 25px;
     cursor: pointer;
     color: #1F2833;
-    transition:opacity 0.2;
+    transition: opacity 0.2;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     opacity: 0.8;
 }
 
-.botaoL{
+.botaoL {
     width: 160px;
     height: 40px;
     border-radius: 30px;
@@ -41,28 +73,28 @@ a:hover{
     font-size: 20px;
     font-weight: 600;
     color: #E6EBFF;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-    transition:opacity 0.2s;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s;
 }
 
-.botaoL:hover{
+.botaoL:hover {
     opacity: 0.8;
 
 }
 
-.logo{
+.logo {
     width: 40%;
     max-width: 430px;
-    
+
     display: inline-block;
     vertical-align: middle;
-    margin:0 5% ;
+    margin: 0 5%;
 
 
 
 }
 
-.texto{
+.texto {
 
     width: 40%;
     display: inline-block;
@@ -71,140 +103,214 @@ a:hover{
     text-align: left;
 }
 
-main{
+main {
     text-align: center;
 }
 
-.botaoE{
+.botaoE {
     width: 180px;
     height: 40px;
     border-radius: 30px;
     cursor: pointer;
     background: #42b7c7;
     border: none;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
     color: #E6EBFF;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-    transition: opacity 0.3s;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s;
 }
 
-.botaoE:hover{
+.botaoE:hover {
     opacity: 0.8;
 }
 
-.titulo{
+.titulo {
     font-size: 50px;
     font-weight: 800;
-    color: #515151;
+    color: #313131;
 }
 
-.sub-titulo{
+.subtitulo {
     font-size: 30px;
-    color: #515151;
+    color: #313131;
     line-height: 60px;
 
 }
 
-.paragrafo{
+.paragrafo {
     font-size: 16px;
     font-weight: 350;
     line-height: 20px;
-    color: #848484;
+    color: #2a2a2a;
     text-align: justify;
     margin: 20px 0 30px 0;
     max-width: 500px;
 }
 
-footer{
+footer {
     text-align: center;
-    background: #E6EBFF;
-    padding: 60px;
+    background: #46a0acc8;
+    padding: 80px 0 80px 0;
     font-size: 14px;
     margin-top: 100px;
 }
-.img-dog{
+
+.img-dog {
     display: block;
     width: 70%;
     height: 650px;
     object-fit: cover;
     margin: 80px auto 0 auto;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
-.servicos{
+
+.agenda {
+    background-color: limegreen;
+    width: 220px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(32, 32, 33, 0.862);
+    transition: scale 0.3s;
+}
+
+.agenda:hover {
+    opacity: 0.8s;
+    scale: 1.02;
+}
+
+.servicos {
     padding: 10px 0 100px;
 }
 
-.h2-servicos{
+.h2-servicos {
     font-weight: 500px;
 }
-.preco{
 
-}
-
-.lista-servicos{
+.lista-servicos {
     width: 200px;
     display: block;
     text-decoration: none;
     color: #462c20;
-    border:2px solid;
+    border: 2px solid;
     margin: 0 20px;
     padding: 20px 0;
     border-radius: 15px;
-    transition: box-shadow 0.2s, transform 0.2 ;
- }
- .lista-servicos:hover{
-    box-shadow: 0 2px 5px rgba(0,0,10 0.2);
-    transform: translateY(-2px);
- }
+    transition: box-shadow 0.2s, transform 0.2;
+}
 
-.img-card{
+.lista-servicos:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 10 0.2);
+    transform: translateY(-2px);
+}
+
+.img-card {
     width: 70%;
 }
 
-@media (max-width:768px){
-    header{
+@media (max-width:768px) {
+    header {
         margin: 30px 0px 60px 0;
-    text-align: center;
-    width: 100%;
-    
+        text-align: center;
+        width: 100%;
+
     }
 
-    a{
+    a {
         font-weight: 500;
         font-size: 16px;
         line-height: 28px;
-        margin: 0 20px 0 0 ;
+        margin: 0 20px 0 0;
     }
 
-    .botaoL{
+    .botaoL {
         width: 90px;
         height: 32px;
         border-radius: 15px;
-     
+
         border: none;
         font-size: 16px;
         font-weight: 500;
-     
-      
+
+
     }
 
-    .logo{
+    .logo {
         width: 40%;
         display: block;
         margin: 0 auto 50px auto;
     }
-    
-    .texto{
+
+    .texto {
         width: 80%;
-      text-align: center;
+        text-align: center;
     }
 
-    .titulo{
+    .titulo {
         font-size: 30px;
-       
+
     }
-.img-dog{
-   max-height: 250px;
-}
+
+    .img-dog {
+        max-height: 250px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
